@@ -10,16 +10,16 @@
 
 <body>
     <div class="container px-5 d-flex justify-content-center align-items-center min-vh-100">
-        <form action="./array.php">
+        <form action="./login.php" method="post">
             <div class="border p-5 rounded">
                 <div class="my-5">
                     <label class="form-label">E-mail:</label>
-                    <input type="email" name="email" class="form-control ">
+                    <input type="email" name="email" class="form-control" id="email" required>
                 </div>
 
                 <div class="my-5">
                     <label class="form-label">Senha:</label>
-                    <input type="text" class="form-control" name="senha">
+                    <input type="password" class="form-control" name="password" id="password" required>
                 </div>
 
                 <div class="d-flex flex-column align-items-center">

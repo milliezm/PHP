@@ -1,59 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <?php
-    //$frutas = array("Laranja", "Banana", "Maçã", "Uva");
-    // print_r($frutas);
+    <div class="container px-5 d-flex justify-content-center align-items-center min-vh-100">
+        <div class="border p-5 rounded">
+            <?php
+            $instrumentos = array("guitarra", "bateria", "violino", "baixo", "saxofone", "tambor");
 
-    $materias = array("história", "português", "física", "ed. física", "geografia", "filosofia");
+            $comprimento = count($instrumentos);
+            echo "Tamanho do array 'instrumentos': $comprimento <hr>";
 
-    //remove o primeiro elemento do array
-    /*$menosUm = array_shift($materias);
-    print_r($menosUm);
-    print_r($materias);*/
+            $slice = array_slice($instrumentos, 2, 5);
+            echo  
 
-    //remove o ultimo elemento do array
-    /*$materiaRemovida = array_pop($materias);
-    print_r($materias);*/
+            $num = array(300, 12, 245, 2, 53, 90);
 
-    //adicionar um elemento no inicio do array
-    /*array_unshift($materias, "sociologia");
-    print_r($materias);*/
+            $menor = min($num);
+            echo "Menor valor do array 'num': $menor <hr>";
 
-    //adicionar elemento no final do array
-    /*array_push($materias, "química");
-    print_r($materias);*/
-
-    //criar array com 7 elementos, todos preenchidos com a mesma coisa
-    /*$fill = array_fill(0, 7, "matemática");
-    print_r($fill);*/
-
-    //junta todos os elementos em uma string, separando-os por virgula
-    /*$implode = implode(",", $materias);
-    print($implode);*/
-
-    //corta e remove um pedaço do array; neste caso: 'física'
-    /*array_splice($materias, 2, 1);
-    print_r($materias);*/
-
-    //mostra o numero de elementos em um array
-    /*$tamanho = count($materias);
-    echo($tamanho);*/
-
-    //cria um novo array usando uma função + um array ja existente
-    function addNumero($materia){
-        return $materia . "2";
-    }
-
-    $materias2 = array_map("addNumero", $materias);
-    print_r($materias2);
-
-    //adicionar img
-    ?>
+            $maior = max($num);
+            echo "Maior valor do array 'num': $maior";
+            ?>
+        </div>
+    </div>
 </body>
+
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
