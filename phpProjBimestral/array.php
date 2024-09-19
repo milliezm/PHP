@@ -17,8 +17,13 @@
             $comprimento = count($instrumentos);
             echo "Tamanho do array 'instrumentos': $comprimento <hr>";
 
-            $slice = array_slice($instrumentos, 2, 5);
-            echo  
+            $instrumentosString = implode(", ", $instrumentos);
+            echo "Array 'instrumentos' transformado em string: $instrumentosString <hr>";
+
+            $reverso = array_reverse($instrumentos);
+            echo "Array 'instrumentos' ao contrário: <br>";
+            print_r($reverso);
+            echo "<br> <hr>";
 
             $num = array(300, 12, 245, 2, 53, 90);
 
