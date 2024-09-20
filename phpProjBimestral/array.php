@@ -31,7 +31,9 @@
             echo "Menor valor do array 'num': $menor <hr>";
 
             $maior = max($num);
-            echo "Maior valor do array 'num': $maior";
+            echo "Maior valor do array 'num': $maior <hr>";
+
+            echo "<img src='src/drums.png' class='img-thumbnail mx-auto d-block' width='45%' height='45%'"
             ?>
         </div>
     </div>
